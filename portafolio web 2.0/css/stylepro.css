@@ -1,0 +1,105 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+
+}
+body{
+  background-image: url('../Imagenes/proyectos.png');
+}
+.container {
+
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+nav {
+  background: none;
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+nav ul li:hover{
+  background: linear-gradient(20deg, black, rgb(192, 127, 6));
+  padding: 2px;
+  cursor: pointer;
+  list-style-position: none;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.carousel {
+  position: absolute; /* Asegura que el carrusel esté posicionado absolutamente */
+  top: 60%; /* Ajusta la posición vertical para mover el carrusel más hacia abajo */
+  left: 60%; /* Ajusta la posición horizontal para mover el carrusel más a la derecha */
+  transform: translate(-50%, -50%); /* Centra el carrusel en ambas direcciones */
+  width: 80%;
+  max-width: 600px; /* Ajusta el ancho máximo del carrusel */
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* Asegura que las imágenes no se salgan del contenedor */
+  max-height: 400px; /* Ajusta la altura máxima de las imágenes */
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 100;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+
+
+

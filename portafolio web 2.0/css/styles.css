@@ -1,0 +1,98 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+body{
+ background-color:  rebeccapurple;
+}
+.container {
+  background-image: url('../Imagenes/Acerca.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+nav {
+  background: none; /* Eliminar el fondo de los botones */
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  width: 100%; /* Ajustar el ancho del nav */
+  display: flex;
+  justify-content: flex-end; /* Alinear los botones hacia la derecha */
+  padding-right: 20px; /* Añadir un margen a la derecha */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 20px; /* Aumentar el margen para más espacio entre botones */
+}
+nav ul li:hover{
+  background: linear-gradient(20deg, black, rgb(192, 127, 6));
+  padding: 2px;
+  cursor: pointer;
+  list-style-position: none;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px; /* Aumentar el tamaño de la fuente */
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.image img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.name h1 {
+  font-size: 150px; /* Aumentar el tamaño del nombre */
+  margin: 0;
+  text-shadow: 8px 8px 16px rgba(0, 0, 0, 0.8); /* Hacer el relieve más destacado */
+  position: relative;
+}
+
+.name h1::after {
+  content: "CHRISTOPHER";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.3); /* Ajustar la opacidad para el efecto de sombra */
+  z-index: -1;
+  transform: scaleY(-1);
+  filter: blur(10px); /* Hacer el desenfoque más pronunciado */
+}
+
+.text-center {
+  margin-top: 20px; /* Espacio superior */
+  font-size: 24px; /* Tamaño de fuente del texto */
+  line-height: 1.5; /* Altura de línea para mejor legibilidad */
+  max-width: 600px; /* Ancho máximo del contenedor del texto */
+  text-align: left; /* Alinear el texto a la izquierda dentro del contenedor */
+  margin-left: 500px; /* Mover el texto más a la derecha */
+}
